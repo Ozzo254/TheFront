@@ -1,0 +1,87 @@
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: black;
+  /* top: 100px; */
+  background: white;
+  width: 100%;
+  border-bottom: none;
+  outline: none;
+  /* border-radius: 18rem; */
+}
+
+.nav .logo {
+  font-family: Outfit;
+  font-size: 3.7rem;
+  padding: 2%;
+  color: teal;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: 800;
+  width: 200px;
+  /* background: whitesmoke; */
+  border-radius: 30rem;
+  /* gap: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Not require the icon */
+._logo::after {
+  content: "🤝🏽";
+  font-size: 25px;
+  width: 3.1rem;
+  background-color: rgb(159,
+      40,
+      159);
+  /* top: -2px; */
+  border: 2px solid #262626;
+  border-radius: 15rem;
+  border-left: none;
+  height: 2.2rem;
+  padding: 10px;
+  margin: 0px -5px 0px 11px;
+  z-index: -1;
+  /* top: -2px; */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 500;
+  gap: 2rem;
+  padding: 1%;
+  border-radius: 18.3rem;
+  margin-top: 0;
+  /* color: black; */
+}
+
+.nav-menu .active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid teal;
+  /* color: rgb(159, 40, 159); */
+}
+
+.nav-menu a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  /* border-radius: 17.5rem; */
+}
+
+.nav-menu a:hover {
+  color: teal;
+  font-weight: 800;
+}
+
+.nav-contact {
+  border-radius: 13rem;
+  padding: 10px 38px;
+  background-color: #fff;
+  color: #262626;
+}

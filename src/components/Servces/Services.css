@@ -1,0 +1,110 @@
+.services-section {
+    padding: 4rem 9rem 9rem 9rem;
+    /* margin: 2%; */
+    /* background-color: hsl(300, 60%, 9%); */
+    /* background-color: hsl(0, 0%, 88%); */
+    /* background: linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 100%); */
+    background: whitesmoke;
+    /* overflow: hidden; */
+
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 9rem;
+    font-size: 3.5rem;
+    border-bottom: 2px solid #2e2d32;
+    outline: none;
+}
+
+.services-grid {
+    /* padding-top: 1%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5.5rem 6rem;
+    /* overflow: hidden; */
+
+}
+
+.service-item {
+    text-align: center;
+    padding: 0;
+    /* background-color: #2e2d32; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* height: max(5rem, 330px); */
+    /* width: max(5rem, 270px); */
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item:hover{
+    transform: scale(1);
+}
+
+.service-item .caption {
+    height: 70px;
+    font-weight: 700;
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item .caption::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 120%);
+    z-index: -1;
+    border-radius: 12px;
+    opacity: 0;
+    transition: 400ms ease-in-out opacity;
+}
+
+.service-item .caption::before,
+.service-item{
+    transition-duration: 600ms;
+    transition-timing-function: ease-in-out;
+}
+
+.service-item:hover .caption::before{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.service-item i {
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 0 1rem;
+    /* color: hsl(60, 100%, 50%); */
+}
+
+.service-item .caption h3 {
+    margin-top: 0;
+    margin-right: 6rem;
+    font-size: 2rem;
+    /* overflow-wrap: calc(X=20); */
+}
+
+/* .service-item h3 :nth-child(2) {
+    display: none;
+} */
+
+/* style the item heaings not to overlap*/
+.service-item p {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: start;
+    z-index: 1;
+    font-weight: 500;
+    /* padding-left: 2.5rem; */
+}
+
+/* @media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+} */
