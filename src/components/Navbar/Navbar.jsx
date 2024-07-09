@@ -60,7 +60,7 @@ const Navbar = () => {
                 : "nav-contact" + ""
             }
           >
-            Contact
+            Get In Touch
           </a>
         </ul>
       </div>
