@@ -17,8 +17,8 @@ const App = ({children}) => {
   let heroData = [
     { text1: "Dive into", text2: "what you love" },
     { text1: "Indulge", text2: "your passions" },
-    { text1: "Own ", text2: "real business" },
-    { text1: "Make Your Dreams", text2: "A Reality" },
+    { text1: "Own A", text2: "real business" },
+    { text1: "Make ", text2: "Dreams Reality" },
     { text1: "Give into", text2: "what you love" },
     { text1: "Give into", text2: "what you love" },
     { text1: "Give into", text2: "what you love" },

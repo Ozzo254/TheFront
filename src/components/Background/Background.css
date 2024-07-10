@@ -12,6 +12,7 @@
     z-index: -1;
     filter: brightness(.45);
     background-color: #2d2e32;
+    overflow: hidden;
     /* margin-bottom: 10px; */
 }
 
