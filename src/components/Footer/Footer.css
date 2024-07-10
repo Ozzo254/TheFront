@@ -57,6 +57,7 @@ body {
     width: 100vw;
     padding: 1rem;
     bottom: 0;
+    overflow-y: hidden;
 }
 
 /*? top section */
