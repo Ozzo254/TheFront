@@ -5,10 +5,15 @@
   box-sizing: border-box;
   scrollbar-color: rgb(154, 27, 174);
   cursor: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* flex-wrap: wrap; */
   /* background: black; */
 }
+
+/* @media (max-width: 768px) {
+  * {overflow: hidden;
+  }
+} */
 
 /* .body {
   min-height: 100vh;

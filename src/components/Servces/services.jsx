@@ -1,6 +1,7 @@
 // import React from "react";
 import "./Services.css";
 import ServicesGallery from "../utils/serices";
+import { Scale } from "@mui/icons-material";
 // import useCursorHandlers from "../utils/hooks/useCursorHandlers";
 // import {Agreement as HRImg,
 //   Design as BrandImg,
@@ -12,6 +13,11 @@ import ServicesGallery from "../utils/serices";
 // } from "../utils/serices"
 
 const Services = () => {
+  const bgTransform = document.querySelector(".service-item");
+  // const cursorHandlers = useCursorHandlers();
+
+  // bgTransform.addEventListener("mousemove",	) => {bgTransform.style.backgroundImage(Scale(1))
+
   const services = [
     {
       title: "Business Strategy",

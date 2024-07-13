@@ -3,6 +3,7 @@ import { useCallback, useContext, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { CursorContext } from "../utils/context/CursorContextProvider";
+// import GetInTouch from "../utils/shared/GetInTouch";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -62,6 +63,7 @@ const Navbar = () => {
           >
             Get In Touch
           </a>
+          {/* <GetInTouch /> */}
         </ul>
       </div>
     </>

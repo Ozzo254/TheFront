@@ -7,7 +7,7 @@
   color: black;
   /* top: 100px; */
   background: white;
-  width: 100%;
+  width: 100vw;
   border-bottom: none;
   outline: none;
   /* border-radius: 18rem; */
@@ -30,6 +30,7 @@
   align-items: center;
   overflow-y: hidden;
 }
+
 /* Not require the icon */
 ._logo::after {
   content: "🤝🏽";
@@ -62,7 +63,7 @@
   /* color: black; */
 }
 
-.nav-menu .active {
+.nav-menu:not(.nav-contact) .active {
   padding-bottom: 3px;
   border-bottom: 3px solid teal;
   /* color: rgb(159, 40, 159); */
@@ -72,17 +73,38 @@
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
+  transition: .3s ease-in-out font-weight;
   /* border-radius: 17.5rem; */
 }
 
-.nav-menu a:hover {
+.nav-menu a:not(.nav-contact):hover {
   color: teal;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .nav-contact {
-  border-radius: 13rem;
-  padding: 10px 38px;
-  background-color: #fff;
-  color: #262626;
+  border-radius: 12rem;
+  padding: 3px 18px;
+  background-color: #fbffff;
+  border: 2px solid teal;
+  color: #0a0c0c;
+  font-weight: 500;
+}
+
+.nav-contact:hover {
+  background: teal;
+  color: #fbffff;
+}
+
+.nav-contact .active {
+  background-color: #fbffff;
+  color: teal;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu :not(.nav-contact) {
+    display: none;
+  }
+  
 }

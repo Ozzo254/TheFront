@@ -5,7 +5,7 @@
     /* background-color: hsl(0, 0%, 88%); */
     /* background: linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 100%); */
     background: whitesmoke;
-    /* overflow: hidden; */
+    /* overflow-y: hidden; */
 
 }
 
@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5.5rem 6rem;
-    /* overflow: hidden; */
+    /* overflow-y: hidden; */
 
 }
 
@@ -45,7 +45,7 @@
 }
 
 .service-item .caption {
-    height: 70px;
+    height: auto;
     font-weight: 700;
     z-index: 1;
     display: flex;
