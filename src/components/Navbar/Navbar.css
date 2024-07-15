@@ -91,6 +91,30 @@
   font-weight: 500;
 }
 
+/* Animated Underline */
+
+/* .nav-contact::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 100%;
+  height: 0.125em;
+  background-color: hsl(200deg, 100%, 50%);
+  transition: transform 640ms 320ms ease-in;
+  transform: translate(-50%, 0) scaleX(0);
+  transform-origin: right;
+}
+
+.nav-contact:hover::after {
+  transform-origin: left;
+  transform:  translate(-50%, 0) scaleX(1);
+}
+
+.nav-contact:hover {
+  border: none;
+} */
+
 .nav-contact:hover {
   background: teal;
   color: #fbffff;
