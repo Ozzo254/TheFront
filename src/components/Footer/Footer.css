@@ -2,41 +2,6 @@
     height: 35vh;
     background: #000;
 } */
-:root {
-    --body-bg: #232938;
-    --footer-background: #0C1220;
-    --text-color: #FAFBFC;
-    --text-gray: #FEFEFE;
-    --text-heading-gray: #F4F5F6;
-    --text-primary: #FAFBFC;
-    --input-border: #e0e0e0;
-    --logo-color: #4170DE;
-    --button-color: #008080;
-    --button-hover: #046060;
-    --button-border:#097878;
-}
-
-html {
-    font-size: 1rem;
-    font-family: 'Red Hat Display', sans-serif;
-}
-
-/*? footer reset */
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::selection {
-    background: var(--button-color);
-    color: var(--text-color);
-}
-
-body {
-    margin: 0;
-    background: var(--body-bg);
-}
 
 /* .footer {
     position: absolute;

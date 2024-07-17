@@ -1,33 +1,31 @@
 .nav {
+  margin: 0;
+  padding: 5px 2rem;
   position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
   color: black;
   /* top: 100px; */
   background: white;
   width: 100vw;
   border-bottom: none;
   outline: none;
+  flex-grow: 1;
   /* border-radius: 18rem; */
 }
 
 .nav .logo {
   font-family: Outfit;
-  font-size: 3.7rem;
-  padding: 2%;
+  font-size: 3.1rem;
+  padding: 5px 0;
+  /* text-wrap: wrap; */
   color: teal;
-  line-height: 3rem;
+  line-height: 2.35rem;
   text-align: center;
   font-weight: 800;
-  width: 200px;
-  /* background: whitesmoke; */
-  border-radius: 30rem;
-  /* gap: 10px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: clamp(90px, 100px, 200px);
+  background-color: inherit;
   overflow-y: hidden;
 }
 
@@ -57,38 +55,38 @@
   font-size: 2rem;
   font-weight: 500;
   gap: 2rem;
-  padding: 1%;
-  border-radius: 18.3rem;
+  padding: 0 1.2rem;
+  /* border-radius: 18.3rem; */
   margin-top: 0;
   /* color: black; */
 }
 
-.nav-menu:not(.nav-contact) .active {
+
+.nav-menu .active:not(.nav-contact) {
   padding-bottom: 3px;
   border-bottom: 3px solid teal;
   /* color: rgb(159, 40, 159); */
 }
 
-.nav-menu a {
+.nav-menu a:not(.nav-contact) {
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
-  transition: .3s ease-in-out font-weight;
-  /* border-radius: 17.5rem; */
 }
 
-.nav-menu a:not(.nav-contact):hover {
+.nav-menu a:hover:not(.nav-contact) {
   color: teal;
-  font-weight: 500;
 }
 
 .nav-contact {
-  border-radius: 12rem;
-  padding: 3px 18px;
+  /* border-radius: 12rem; */
+  padding: 11px 22px;
   background-color: #fbffff;
   border: 2px solid teal;
   color: #0a0c0c;
   font-weight: 500;
+  font-size: 15px;
+  transition: .1s ease-in-out border;
 }
 
 /* Animated Underline */
@@ -115,18 +113,25 @@
   border: none;
 } */
 
-.nav-contact:hover {
+.nav-contact:hover,
+.active:where(.nav-contact):hover {
   background: teal;
-  color: #fbffff;
+  color: hsl(180, 100%, 80%);
+  border: none;
+  outline: none;
 }
 
-.nav-contact .active {
-  background-color: #fbffff;
-  color: teal;
+.active:where(.nav-contact) {
+  background: teal;
+  color: hsl(180, 100%, 100%);
+  /* background-color: #fbffff; */
+  /* color: hsl(0, 0%, 100%); */
+  /* color: teal; */
   border: none;
 }
 
 @media (max-width: 768px) {
+  
   .nav-menu :not(.nav-contact) {
     display: none;
   }

@@ -129,7 +129,8 @@ const Services = () => {
         <h2 className="section-title">Our Services</h2>
         <div className="services-grid" >
           {services.map((service, index) => (
-            <div key={index} className="service-item" style={{
+            <div key={index} className="service-item" 
+            style={{
               backgroundImage: `url(${service.bgImg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
@@ -166,6 +167,7 @@ const Services = () => {
                 e.currentTarget.style.transform ='scale(1.11)';
               }}
               >
+                
               <div className="caption">
                 <i className={service.icon}></i>
                 <h3>{service.title}</h3>

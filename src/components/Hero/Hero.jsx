@@ -1,6 +1,6 @@
 // import React from 'react'
 import "./Hero.css";
-import arrow_btn from "../../assets/arrow_btn.png";
+// import arrow_btn from "../../assets/arrow_btn.png";
 import play_icon from "../../assets/play_icon.png";
 import pause_icon from "../../assets/pause_icon.png";
 import useCursorHandlers from "../utils/hooks/useCursorHandlers";
@@ -51,7 +51,7 @@ const Hero = ({
           position: 'absolute',
           top: '0',
           right: '0',
-          padding: '1.2rem', //animate icon to move from bottom-left to top-right
+          padding: '1.1rem', //animate icon to move from bottom-left to top-right
         }} />
         {/* <img src={arrow_btn} alt="" /> */}
       </div>

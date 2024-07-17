@@ -1,13 +1,92 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   font-family: "Poppins", 'Outline';
   box-sizing: border-box;
   scrollbar-color: rgb(154, 27, 174);
   cursor: none;
-  /* overflow-x: hidden; */
-  /* flex-wrap: wrap; */
-  /* background: black; */
+  overflow-x: hidden;
+} */
+
+:root {
+  --body-bg: #232938;
+  --footer-background: #0C1220;
+  --text-color: #FAFBFC;
+  --text-gray: #FEFEFE;
+  --text-heading-gray: #F4F5F6;
+  --text-primary: #FAFBFC;
+  --input-border: #e0e0e0;
+  --logo-color: #4170DE;
+  --button-color: #008080;
+  --button-hover: #046060;
+  --button-border:#097878;
+  --scrollbarbg-color: hsl(180, 100%, 15%);
+  --scrollbar-color: teal;
+}
+
+html {
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif, "Poppins", 'Outline';
+}
+
+/*? footer reset */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+*::selection {
+  background: var(--button-color);
+  color: var(--text-color);
+}
+
+/* the scrollbar. */
+::-webkit-scrollbar {
+  color: var(--scrollbar-color);
+  width: 11px;
+  border-radius: 50%;
+}
+
+/* the buttons on the scrollbar (arrows pointing upwards and downwards). */
+::-webkit-scrollbar-button {
+  font-size: 1rem;
+  background-color: var(--button-hover);
+  /* border: 1.5px solid var(--body-bg); */
+  /* border-radius: 5px; */
+  box-shadow: inset 0 0 5px var(--input-border);
+}
+
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbarbg-color);
+  border-radius: 5px;
+  /* box-shadow: inset 0 0 5px var(--input-border); */
+}
+
+/* the track (progress bar) of the scrollbar. */
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-color);
+  box-shadow: inset 0 0 5px var(--input-border);
+
+}
+
+/* the track (progress bar) NOT covered by the handle. */
+/* ::-webkit-scrollbar-track-piece {
+  background-color: red;
+} */
+
+/* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+/* ::-webkit-scrollbar-corner {} */
+
+/* the draggable resizing handle that appears at the bottom corner of some elements. */
+/* ::-webkit-resizer {} */
+
+body {
+  margin: 0;
+  background: var(--body-bg);
 }
 
 /* @media (max-width: 768px) {
